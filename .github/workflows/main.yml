@@ -20,17 +20,12 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
+    # Runs a single command using the runners shell
     - name: Install NodeJS
       uses: actions/setup-node@v2-beta
       with: 
         node-version: 12
     - name: Install Surge
       run: npm install -g surge
-    - name: GitHub Action for Yarn
-      uses: Borales/actions-yarn@v2.1.0
-      with:
-        cmd: install
-    - name: Making Build folder
-      run: yarn build
-    - name: React App Deploy
+    - name: Run Surge
       run: surge ./build stupendous-eggnog.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
