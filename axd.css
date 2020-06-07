@@ -125,12 +125,10 @@ input:focus, textarea:focus, *:required:focus{border-color:#D01818;}
 
 
 /* Rows */
-.row0, .row0 a{color:#7F7F7F;}
+.row0, .row0 a{color:black;}
 .row0{border-color:#D01818;}
 .row1{color:#FFFFFF; background-color:rgba(37,37,37,.5);/* #252525 */}
 .row2{color:#141414; background-color:#F3F3F3;}
-
-
 
 
 
@@ -169,6 +167,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#D01818;}
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:900px){
 	.hoc{max-width:90%;}
+	
 
 
 
@@ -176,40 +175,19 @@ input:focus, textarea:focus, *:required:focus{border-color:#D01818;}
 	#header #logo{margin:0;}
 
 	
-	#mainav ul{display:none;}
+	#mainav ul{display:inline; }
 	#mainav form{display:block; margin-top:5px;}
 
 	
 	#comments input[type="reset"]{margin-top:10px;}
 	.pagination li{display:inline-block; margin:0 5px 5px 0;}
+	.footer{display: block; }
 
 	
 }
 
 
-@media screen and (max-width:750px){
-	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
-	.fl_left, .fl_right{display:block; float:none;}
-	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
-	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
 
-	#topbar{padding-top:15px; text-align:center;}
-	#topbar ul{margin:0 0 15px 0; line-height:normal;}
-
-	#header{text-align:center;}
-	#header #logo{margin:0 0 30px 0;}
-
-	#mainav form{margin-top:0;}
-
-	
-
-	.services article{max-width:320px;}
-
-
-@media screen and (max-width:450px){
-	#topbar ul li{margin-bottom:2px; padding-right:0; border-right:none;}
-}
-}
 .div123{
 	height: 100%;
 	background-color: #0009;
@@ -223,11 +201,14 @@ input:focus, textarea:focus, *:required:focus{border-color:#D01818;}
 	box-shadow: 10px 10px 5px rgb(3, 3, 3);
 }
 #marg{
+	
+	font-size: 80%;
+	line-height: 10px;
 	margin-left: 5%;
 	width: 90%;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 	
-	line-height: 120%;
+	line-height: 170%;
 }
 
 
@@ -236,7 +217,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#D01818;}
 	text-align: center;
 	margin-top: 1%;
 	font-size: 200%;
-	font-family: cursive;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 	min-width:100%;
 	
 }
@@ -247,11 +228,13 @@ input:focus, textarea:focus, *:required:focus{border-color:#D01818;}
 
 }
 
+/*Footer*/
 .footer{
 	width: 100%;
-	height: 400px;
+	height: 350px;
 	background-color: rgb(32, 32, 32);  
 	margin-top: 2%;
+	max-width: 100%;
   }
   .context1{
 	color: white;
@@ -278,3 +261,129 @@ input:focus, textarea:focus, *:required:focus{border-color:#D01818;}
 	  margin-left: 10%;
 	  margin-bottom: 10%;
   }
+
+/*About Page*/
+
+.wrapperr{
+  margin-top: 50px;
+}
+
+.wrapperr h1{
+  font-family: 'Allura', cursive;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #0009;
+  margin: 20px;
+  margin-bottom: 80px;
+  width: 350px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #81c644;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 3px;
+}
+
+.contact-section{
+	background-color: #0009;
+	background-size: cover;
+	padding: 40px 0;
+  }
+  .contact-section h1{
+	text-align: center;
+	color: #ddd;
+  }
+
+  /*Contact Form page */
+  .border{
+	width: 100px;
+	height: 10px;
+	background: #34495e;
+	margin: 40px auto;
+  }
+  
+  .contact-form{
+	max-width: 600px;
+	margin: auto;
+	padding: 0 10px;
+	overflow: hidden;
+  }
+  label{
+	color: #ddd;
+  }
+  .contact-form-text{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 16px 0;
+	border: 0;
+	background: #111;
+	padding: 20px 40px;
+	outline: none;
+	color: #ddd;
+	transition: 0.5s;
+  }
+  .contact-form-text:focus{
+	box-shadow: 0 0 10px 4px #34495e;
+  }
+  
+  .xyz :focus{
+	box-shadow: 0 0 10px 4px #34495e;}
+  textarea.contact-form-text{
+	resize: none;
+	height: 120px;
+  }
+  .contact-form-btn{
+	float: right;
+	border: 0;
+	background: #880012;
+	color: #fff;
+	padding: 12px 50px;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.5s;
+  }
+  .contact-form-btn:hover{
+	background: #2980b9;
+  }
+  
