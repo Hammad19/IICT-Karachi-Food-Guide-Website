@@ -27,17 +27,20 @@ body {
 h1 {
   letter-spacing: 1px;
   margin: 0;
+  justify-content: center;
 }
 
 h3 {
   border-bottom: 1px solid #bbb;
   padding-bottom: 10px;
   margin: 40px 0 10px;
+  justify-content: center;
 }
 
 h4 {
   margin: 0;
   text-transform: uppercase;
+  justify-content: center;
 }
 
 .inc-exp-container {
@@ -65,11 +68,11 @@ h4 {
 }
 
 .money.plus {
-  color: #2ecc71;
+  color: green;
 }
 
 .money.minus {
-  color: #c0392b;
+  color: red;
 }
 
 label {
@@ -89,7 +92,7 @@ input[type='number'] {
 
 .btn {
   cursor: pointer;
-  background-color: red;
+  background-color: rgb(40, 177, 40);
   box-shadow: var(--box-shadow);
   color: rgb(255, 255, 255);
   border: 0;
